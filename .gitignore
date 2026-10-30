@@ -1,0 +1,10 @@
+.next/
+out/
+node_modules/
+contact-sheet.jpg
+public/*
+!public/assets/
+!public/favicon.svg
+*.zip
+*.tar.gz
+dist/
