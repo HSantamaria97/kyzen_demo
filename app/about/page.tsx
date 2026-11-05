@@ -1,6 +1,27 @@
 import type { Metadata } from 'next';
 import { PageIntro } from '../../components/PageIntro/PageIntro';
 import { Section } from '../../components/Section/Section';
+import { CoachIntro } from '../../components/CoachIntro/CoachIntro';
 import { CTA } from '../../components/CTA/CTA';
-export const metadata: Metadata = { title: 'About', description: 'Meet the approach behind Kyzen: personal coaching, purposeful plans, and training that fits your life in Austin.' };
-export default function About() { return <><PageIntro eyebrow="About Kyzen" title="Personal training should feel personal." description="Kyzen is built around a simple idea: working on yourself should fit into your life. Bring focused coaching into your everyday spaces."/><Section><div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-20"><img className="feature-photo" src="/assets/training-strength.jpg" alt="Bodyweight strength training outside in Austin"/><div><p className="eyebrow">Our approach</p><h2>Meet you where you are.<br />Help you move forward.</h2><p className="muted mt-6">Every starting point is different. Your schedule, your experience, and your goals shape how you train. We start by listening, then build a practical approach you can keep coming back to.</p><p className="muted mt-5">One-on-one sessions offer the space for coaching, questions, and useful feedback—at home, in your apartment gym, or outdoors.</p></div></div></Section><Section className="surface"><div className="grid gap-10 md:grid-cols-3">{[['Personal attention', 'Focused sessions with room for your questions, your pace, and your preferences.'], ['A practical plan', 'A training approach that works with your space, equipment, and routine.'], ['Consistency in real life', 'Less travel and a clear purpose for each session can make showing up feel simpler.']].map(([title, text]) => <div key={title}><h3>{title}</h3><p className="muted mt-4">{text}</p></div>)}</div></Section><CTA /></>; }
+
+export const metadata: Metadata = {
+  title: 'About me',
+  description: 'Meet Francis Paesano: software engineer, personal trainer, and calisthenics specialist who enjoys helping beginners learn to train.',
+};
+
+export default function About() {
+  return <>
+    <PageIntro eyebrow="About Kyzen" title="A little about me." description="I’m Francis Paesano. I enjoy fitness, teaching, and helping people learn how to train." />
+    <CoachIntro />
+    <Section>
+      <div className="grid gap-10 md:grid-cols-3">
+        {[
+          ['Personal attention', 'Focused sessions with room for your questions, your pace, and your preferences.'],
+          ['A practical plan', 'A training approach that works with your space, equipment, and routine.'],
+          ['Consistency in real life', 'Less travel and a clear purpose for each session can make showing up feel simpler.'],
+        ].map(([title, text]) => <div key={title}><h3>{title}</h3><p className="muted mt-4">{text}</p></div>)}
+      </div>
+    </Section>
+    <CTA />
+  </>;
+}

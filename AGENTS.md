@@ -1,3 +1,7 @@
+## Deployment preference
+
+Work locally only. Use the local development server for previews. Do not deploy, publish, push source to hosted preview services, or create hosted Sites unless the user explicitly asks for that action.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know

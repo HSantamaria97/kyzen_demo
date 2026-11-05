@@ -1,0 +1,77 @@
+export const trainingPages = [
+  {
+    intro: 'A workout is easier to follow when someone is there to explain it. Kyzen brings one-on-one coaching to your space, with sessions planned around your experience and what you want to work toward.',
+    fitTitle: 'Time to work on your training, with someone paying attention.',
+    fit: 'You might be learning your first exercises, returning after time away, or training regularly without a clear plan. One-on-one sessions give you room to ask questions, practice movements, and understand how each workout fits into a longer-term program.',
+    audience: ['You want guidance while you exercise, rather than a program to follow alone.', 'You’re unsure about technique or how to choose exercises.', 'You want a regular appointment and someone tracking your progress.'],
+    approach: 'The training can draw on weights, calisthenics, or a combination of both. The choice depends on your goals, current ability, and available equipment. You don’t need to arrive knowing the names of exercises or how a workout should be structured.',
+    includes: [
+      ['A program with a purpose', 'Your workouts are part of a longer-term plan. We discuss what you want to work toward and use that to guide the exercises, rather than choosing a different routine at random each time.'],
+      ['Coaching during the workout', 'Your trainer explains the movements, watches your form, and gives feedback as you practice. There’s time to ask why an exercise is included or say when something feels unclear.'],
+      ['Progress that gets recorded', 'We track the work you complete and use it to plan what comes next. Exercises and the amount of work can change as your ability develops.'],
+    ],
+    steps: [
+      ['Talk through your starting point', 'Share your training experience, goals, and concerns. We’ll also discuss your location, schedule, and what equipment you have access to.'],
+      ['Try a workout', 'The free consultation includes a workout so you can experience the coaching and ask questions before choosing ongoing training.'],
+      ['Agree on the next steps', 'We explain prices, session structure, and scheduling options. If you decide to continue, we plan the training from there.'],
+    ],
+    logisticsTitle: 'Training comes to you.',
+    logistics: 'Kyzen is a mobile business serving Austin and the surrounding area, with a focus on North and Central Austin. Your home, apartment gym, or a suitable outdoor space may work. We’ll confirm the location and available equipment together before arranging sessions.',
+    faqs: [
+      ['Do I need to be fit before starting?', 'No. We work with beginners as well as people who have trained before. Your starting point helps determine the work; you don’t need to prepare for the consultation with a workout routine of your own.'],
+      ['Do I need my own equipment?', 'Let us know what you have access to. Calisthenics allows training with minimal equipment, and an apartment gym may offer other options. We’ll discuss what is practical for your space before you commit.'],
+      ['How often should I book?', 'We’ll discuss your goals, availability, and the structure of the sessions during your consultation. The schedule should be something you can realistically keep up with.'],
+      ['What does it cost?', 'We’ll explain the available options and prices after your free consultation, before you decide whether to continue. You can also contact Kyzen with pricing questions beforehand.'],
+    ],
+  },
+  {
+    intro: 'Train with someone you know, with a coach planning the work. Small-group training brings two or more people together around roughly similar goals, while keeping individual guidance part of the session.',
+    fitTitle: 'A shared session, with attention for each person.',
+    fit: 'If you and a friend keep talking about training together, a planned session gives you a place to start. Kyzen handles the program and coaching, so you can focus on doing the work together.',
+    audience: ['You have a friend or group who would like to train together.', 'Your goals are similar enough to follow a shared training approach.', 'You want coaching and a regular session, with company alongside you.'],
+    approach: 'Small-group training follows the same planned approach as one-on-one coaching. The group matters when designing the sessions: goals should be roughly aligned, and the workout needs to leave enough time for each person to receive attention. We’ll talk through whether your group is a good fit before you book ongoing sessions.',
+    includes: [
+      ['A plan for the group', 'We plan each workout as part of a longer-term program, taking the group’s goals and starting points into account. You don’t have to organize a routine yourselves.'],
+      ['Individual coaching', 'Training together still includes explanations and form feedback. Everyone should be able to ask questions and understand the exercises they’re doing.'],
+      ['Progress over time', 'We track the workouts and use that information to plan future sessions. The aim is to keep the work useful for each person as the group develops.'],
+    ],
+    steps: [
+      ['Tell us about your group', 'Let us know who wants to train, your experience levels, and what each person hopes to work on.'],
+      ['Discuss the practical details', 'We’ll talk through a location, equipment, and a schedule that works for the group, along with how the sessions will be structured.'],
+      ['Try the coaching before continuing', 'The free consultation includes a conversation and a workout. We’ll then explain options and prices so you can decide together.'],
+    ],
+    logisticsTitle: 'Choose a place that works for the group.',
+    logistics: 'Kyzen travels within Austin and the surrounding area, focusing on North and Central Austin. A suitable home, apartment gym, or outdoor space may work, depending on the group and equipment. Tell us what you have in mind so we can check the details.',
+    faqs: [
+      ['How many people make a small group?', 'Small-group training is for two or more people. Contact Kyzen with your group size so we can discuss the space, goals, and individual attention needed.'],
+      ['Do we need the same experience level?', 'The important starting point is roughly similar goals. Tell us about everyone’s experience so we can discuss whether a shared session makes sense.'],
+      ['Can I join without a group?', 'Contact us to discuss your situation. We can talk through the training options, but we don’t advertise a standing timetable of open group classes.'],
+      ['How much does group training cost?', 'We’ll discuss the group, session structure, and prices before you decide to continue. Send us the number of people and where you’d like to train when you get in touch.'],
+    ],
+  },
+  {
+    intro: 'Know what to work on, then train when it fits your week. Online coaching gives you a planned program, weekly conversations, and somewhere to bring your questions while you complete the workouts independently.',
+    fitTitle: 'For people who want a plan and regular check-ins.',
+    fit: 'You may be comfortable exercising on your own but unsure how to put a program together. Or you may find that having someone review your week helps you follow through. Online coaching provides that ongoing structure without needing to meet for every workout.',
+    audience: ['You can complete workouts independently.', 'You want direction instead of piecing together unrelated routines.', 'You want a weekly conversation about progress and room for questions between calls.'],
+    approach: 'We discuss your goals, experience, schedule, and available equipment before planning the work. You follow the workouts on your own and bring back what went well, what was difficult, and what needs explaining. If you want a trainer beside you during each exercise, our in-person options may suit you better.',
+    includes: [
+      ['Workouts and a longer-term program', 'Your training has a planned direction. We take your starting point and available equipment into account so you know what you’re working on between check-ins.'],
+      ['Meal plans', 'Meal plans are included alongside the workouts. We’ll discuss what this part of the coaching involves during your consultation so you understand the support before deciding.'],
+      ['Weekly calls and questions between them', 'A weekly call gives us time to review how training is going and discuss the next steps. You can also send questions between calls rather than saving everything for the next conversation.'],
+    ],
+    steps: [
+      ['Talk about your routine', 'Tell us where you train, what equipment you use, your experience, and what you want help with.'],
+      ['Understand the coaching', 'We’ll explain the program, weekly calls, and how to ask questions between them. The free consultation includes a conversation and a workout; contact us to discuss the arrangements.'],
+      ['Train and review', 'Complete the planned workouts independently. Use the weekly call to discuss progress, difficulties, and any changes needed.'],
+    ],
+    logisticsTitle: 'Your workouts happen independently.',
+    logistics: 'Online coaching doesn’t include live supervision of your actual workouts. You’ll need a place where you can follow the program and a schedule for the weekly call. We’ll discuss your setup and whether this level of support suits you before you commit.',
+    faqs: [
+      ['Are the workouts live video sessions?', 'No. You complete the workouts independently. The weekly call is for reviewing progress, discussing questions, and planning what comes next.'],
+      ['Do I need a gym membership?', 'Tell us what equipment and space you have. We can discuss whether a program using that setup is practical; calisthenics can make use of minimal equipment.'],
+      ['What if I’m unsure about an exercise?', 'Ask questions between calls or bring them to your weekly check-in. If you need supervision while exercising, discuss one-on-one training with us before choosing online coaching.'],
+      ['What are the prices and next steps?', 'Book a free consultation to discuss your goals and the coaching. We’ll explain the options and prices before you decide whether to continue.'],
+    ],
+  },
+];
