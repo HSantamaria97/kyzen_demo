@@ -61,7 +61,6 @@ export function CredentialBadges() {
         ? <img className="credential-official-logo" src={aceCredential.authorizedLogoSrc} alt="American Council on Exercise" width="72" height="72" />
         : <CredentialEmblem />}
       <div className="credential-label">
-        <span className="credential-kicker">American Council on Exercise</span>
         <strong>{current ? <>ACE Certified<br />Personal Trainer</> : <>ACE Certified<br />Personal Trainer</>}</strong>
         {current && <span className="credential-status is-current">Certification verified</span>}
         {aceCredential.status === 'expired' && <span className="credential-status">Certification not current</span>}
@@ -69,7 +68,7 @@ export function CredentialBadges() {
     </li>
     <li className="credential-item">
       <CredentialEmblem medical />
-      <div className="credential-label"><span className="credential-kicker">Emergency preparedness</span><strong>CPR &amp; First Aid</strong><span className="credential-detail">Personal training · Safety</span></div>
+      <div className="credential-label"><strong>CPR Certified</strong></div>
     </li>
   </ul>;
 }

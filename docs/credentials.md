@@ -8,4 +8,4 @@ Use `expired` to explicitly mark a credential not current. Leave dates null unti
 
 `authorizedLogoSrc` is optional. The current asset is the ACE logo supplied by the site owner, copied without modification. Its display does not change the certification status; verification remains pending until confirmed. Set this path only to a local, authorized, unmodified official ACE asset. The fallback SVG is original Kyzen decoration, not an ACE logo, seal, or endorsement.
 
-The CPR & First Aid emblem is original SVG artwork. It carries no issuing organization's branding and does not mention AED. The qualification text is supplied by the site owner.
+The CPR emblem is original SVG artwork. It carries no issuing organization's branding and does not mention AED. The qualification text is supplied by the site owner.
