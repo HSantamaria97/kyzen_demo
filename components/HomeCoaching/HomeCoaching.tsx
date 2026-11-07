@@ -13,7 +13,7 @@ export function HomeCoaching() {
         <div>
           <p className="eyebrow">How we teach</p>
           <h2 id="coaching-title">We’ll start with<br /><span>what you can do now.</span></h2>
-          <p className="coaching-intro">You don’t need gym experience to work with us. We take time with the movements, explain the reasons, and listen to your concerns. Proper form is something we’ll keep working on together.</p>
+          <p className="coaching-intro">You don’t need gym experience to work with us. We take time with the movements, explain the reasons, and listen to your concerns. Proper form is something we’ll keep working on together. Training can use weights, bodyweight exercises, or both, depending on your goals and the equipment available. You’ll have a longer-term program, with each workout contributing to what you’re learning and practicing.</p>
           <div className="coaching-starting-points">
             {startingPoints.map(({ title, copy }) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}
           </div>

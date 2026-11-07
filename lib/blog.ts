@@ -5,7 +5,8 @@ export type BlogPost = {
   excerpt: string;
   image: string;
   imageAlt: string;
-  imageCredit: { name: string; url: string };
+  imageCredit: { name: string; url?: string };
+  cover?: { image: string; imageAlt: string; imageCredit: { name: string; url?: string } };
   sections: { heading: string; paragraphs: string[]; points?: string[] }[];
   sources: { label: string; url: string }[];
 };
@@ -34,9 +35,10 @@ export const posts: BlogPost[] = [
     title: 'Calisthenics begins with a starting point, not a handstand',
     category: 'Calisthenics',
     excerpt: 'The advanced movements catch your eye. Your own training can begin with simpler bodyweight exercises and a clear purpose.',
-    image: '/assets/stock-bodyweight.jpg',
-    imageAlt: 'A man practicing a push-up in a gym',
-    imageCredit: { name: 'Ivan S / Pexels', url: 'https://www.pexels.com/photo/man-doing-push-ups-4162495/' },
+    image: '/assets/training-outdoors.jpg',
+    imageAlt: 'Francis demonstrating an outdoor L-sit in daylight',
+    imageCredit: { name: 'Kyzen — Francis demonstrating an advanced L-sit' },
+    cover: { image: '/assets/training-outdoors.jpg', imageAlt: 'Francis demonstrating an outdoor L-sit in daylight', imageCredit: { name: 'Kyzen — Francis demonstrating an advanced L-sit' } },
     sections: [
       { heading: 'Look beyond the highlight', paragraphs: ['Handstands and L-sits are memorable examples of bodyweight movement. They are also advanced demonstrations, not entry requirements for calisthenics.', 'Calisthenics uses bodyweight as resistance. A useful introductory conversation is about the movements you can currently practice with control, the space you have, and the support you need. Your starting point can look very different from a photo in the gallery.'] },
       { heading: 'Make the movement fit the person', paragraphs: ['Discuss exercise variations with your coach instead of choosing a movement only because it looks impressive. The aim is to understand the task and choose an appropriate level of difficulty.', 'Ask how an exercise fits your plan and what you should practice before moving to a more demanding variation. Clear feedback is more useful than chasing a new skill every week.'], points: ['What can I practice with the equipment and space available?', 'What does a controlled repetition look like for this movement?', 'How will we decide when a different variation makes sense?'] },

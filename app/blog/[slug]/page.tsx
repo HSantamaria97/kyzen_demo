@@ -15,10 +15,11 @@ export async function generateMetadata({ params }: ArticleProps): Promise<Metada
 export default async function Article({ params }: ArticleProps) {
   const post = getPost((await params).slug);
   if (!post) notFound();
+  const cover = post.cover ?? post;
   return <>
     <article className="journal-article">
       <header className="site-container article-header"><Link className="text-link" href="/blog/">← Back to the journal</Link><p className="eyebrow">{post.category}</p><h1>{post.title}</h1><p className="article-excerpt">{post.excerpt}</p></header>
-      <figure className="site-container article-figure"><img className="article-cover" src={post.image} alt={post.imageAlt} /><figcaption>Photo: <a href={post.imageCredit.url} target="_blank" rel="noopener noreferrer">{post.imageCredit.name}</a></figcaption></figure>
+      <figure className="site-container article-figure"><img className="article-cover" src={cover.image} alt={cover.imageAlt} /><figcaption>Photo: {cover.imageCredit.url ? <a href={cover.imageCredit.url} target="_blank" rel="noopener noreferrer">{cover.imageCredit.name}</a> : cover.imageCredit.name}</figcaption></figure>
       <div className="article-body">
         {post.sections.map(section => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}{section.points && <ul>{section.points.map(point => <li key={point}>{point}</li>)}</ul>}</section>)}
         <aside className="article-sources"><h2>Further reading</h2><ul>{post.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a></li>)}</ul><p>General educational information. Discuss your own starting point and needs with an appropriate professional.</p></aside>
